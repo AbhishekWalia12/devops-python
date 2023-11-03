@@ -117,8 +117,8 @@ end_of_game = False
 while not end_of_game:
     guess = input("Guess the letter: ").lower()
 
-for position in range(word_length):
-    letter = chosen_word[position]
-    if letter == guess:
-        display[position] = letter
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
 print(display)
